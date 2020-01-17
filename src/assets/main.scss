@@ -1,0 +1,12 @@
+@import "./modules/controlPanel.scss";
+@import "./modules/personsTableView.scss";
+@import "./modules/personPreView.scss";
+
+*, *:before, *:after { box-sizing: border-box; }
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

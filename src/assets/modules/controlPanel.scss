@@ -1,0 +1,79 @@
+.controlPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  &__sortModule,
+  &__viewModule {
+
+    width: 60%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+    margin: 15px 0;
+    color: gray;
+    font-size: 1.1rem;
+    }
+  }
+
+  &__viewModule {
+    width: 30%;
+    margin-right: 0;
+  }
+
+  &__sortModule__properties,
+  &__sortModule__order,
+  &__viewModule__types {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    &:last-child {margin-bottom: 0;}
+  }
+
+  &__sortModule__properties label span,
+  &__sortModule__order label span,
+  &__viewModule__types label span {
+    display: block;
+    font-size: .9rem;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    user-select: none; 
+  }
+
+  &__viewModule__types label span {
+    padding: 22px 15px; 
+  }
+
+  &__sortModule__properties,
+  &__sortModule__order,
+  &__viewModule__types {
+
+    label input:checked ~ span {
+      background-color: rgb(224, 224, 224);
+    }
+
+    label:not(:first-child) span {
+      border-left: none;
+    }
+
+    label input {
+      position: absolute;
+      left: -9999999px;
+    }
+  }
+  
+  &__sortModule__properties label {
+    width: 33.33%;
+  }
+  
+  &__sortModule__order label,
+  &__viewModule__types label {
+    width: 50%;
+  }
+}

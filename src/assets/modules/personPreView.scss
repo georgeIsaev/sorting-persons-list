@@ -1,0 +1,84 @@
+.personsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .person.__preView {
+    display: inline-flex;
+    width: 49%;
+    margin-bottom: 20px;
+    background-color: rgba(236, 236, 236, 0.349);
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+    .person__info {
+      position: relative;
+      padding: 20px 25px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h3, p {margin: 0;}
+    }
+
+    .person__name-avatar{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 25px;
+    
+      .person__name-avatar__avatar{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+      }
+    }
+
+    .person__age,
+    .person__phrase,
+    .person__phone {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .person__age {
+      color: gray;
+    }
+
+    .person__fav {
+      position: absolute;
+      right: 30px;
+      top: 40px;
+      width: 5%;
+      display: flex;
+      align-items: center;
+    
+      .person__fav__icon{
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .person.__preView.withVideo {
+    width: 100%;
+
+    .person__info {width: 49%;}
+    .person__video {
+      position: relative;
+      width: 51%;
+      box-shadow: -5px 0 10px rgba(0,0,0,0.5);
+
+      video {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

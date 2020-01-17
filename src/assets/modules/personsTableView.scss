@@ -1,0 +1,50 @@
+.personsContainer .person.__tableView {
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.349);
+  border-bottom: 1px solid rgb(161, 161, 161);
+
+  .person__info {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .person__name-avatar{
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    
+      .person__name-avatar__avatar{
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+  
+    .person__age{
+      width: 15%;
+    }
+  
+    .person__phone{
+      width: 30%;
+    }
+
+    .person__fav {
+      width: 5%;
+      display: flex;
+      align-items: center;
+    
+      .person__fav__icon{
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .person__phrase,
+  .person__video {
+    display: none;
+  }
+}
