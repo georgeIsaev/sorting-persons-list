@@ -87,8 +87,8 @@ module.exports = {
       inject: true,
     }),
     new CopyPlugin([
+      {from: 'src/static', to: 'static'},
       {from: 'src/data', to: 'data'},
-      { from: 'src/static', to: 'static' },
     ]),
   ],
 }

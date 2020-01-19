@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .person.__preView {
+  .person.__preview {
     display: inline-flex;
     width: 49%;
     margin-bottom: 20px;
@@ -58,10 +58,18 @@
       .person__fav__icon{
         cursor: pointer;
       }
+
+      polygon {
+        fill: gray;
+      }
+
+      polygon.fav {
+        fill: black;
+      }
     }
   }
 
-  .person.__preView.withVideo {
+  .person.__preview.withVideo {
     width: 100%;
 
     .person__info {width: 49%;}
