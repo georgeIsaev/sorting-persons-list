@@ -7,8 +7,8 @@ class ViewModule extends React.Component {
       <div className="controlPanel__viewModule">
         <h4 className="controlPanel__viewModule__title"> View </h4>
         <div className="controlPanel__viewModule__types">
-          <ViewType viewType={this.props.viewTypes[0]} />
-          <ViewType viewType={this.props.viewTypes[1]} />
+          <ViewType click={this.props.inputClick} viewType={this.props.viewTypes[0]} />
+          <ViewType click={this.props.inputClick} viewType={this.props.viewTypes[1]} />
         </div>
       </div>
     )
